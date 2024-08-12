@@ -5,7 +5,7 @@ const AdminHeader = () => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    navigate('/admin-login'); // Redirect to login page or any other page
+    navigate('/login'); // Redirect to login page or any other page
   };
 
   return (
@@ -24,13 +24,13 @@ const AdminHeader = () => {
             Home
           </Link>
           <Link
-            to="/view-user"
+            to="/view-users"
             className="text-gray-300 hover:text-white transition-colors duration-300 px-4 py-2 rounded-md text-sm font-medium"
           >
             View User
           </Link>
           <Link
-            to="/view-contact"
+            to="/admin-contact"
             className="text-gray-300 hover:text-white transition-colors duration-300 px-4 py-2 rounded-md text-sm font-medium"
           >
             View Contact
